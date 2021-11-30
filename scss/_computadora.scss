@@ -1,0 +1,238 @@
+/*----------------------------------- MEDIAQUERY COMPUTADORA----------------------------------------*/
+@media (min-width: 992px){
+    /*                                          NO-DISPLAY                                          */
+    .header__mobile{
+        display: none;
+    }
+    /*                                          HEADER                                          */
+    .header__computer--logo p{
+        font-size: 3.5rem;  
+        color: $color1;
+        border-radius: 1rem;
+        padding: 1rem;
+        animation: Flicker .23s infinite;
+    }
+    .header__computer{
+        padding-top: 2rem;
+        grid-area: header;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .header__computer--image{
+        background: url(../img/banner.jpg);
+        background-size: cover;
+        border: $borde;
+        width: 30%;
+        height: 15rem;
+        border-radius: 10%;
+    }
+    .header__computer--links{
+        padding-top: 2rem;
+        height: fit-content;
+        width: fit-content;
+        transform: skewY(20deg);
+    }
+    .header__computer--links div{
+        margin: 2rem;
+    }
+    .header__computer a{
+        font-size: 1.3rem;
+        text-decoration: none;
+        position: relative;
+        color:$color1;
+        margin: .5rem .5rem .5rem 0rem;
+        padding: .5rem;
+        transition: 0.5s;
+    }
+    .header__computer a:before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 1rem;
+        height: 1rem;
+        border-bottom: .2rem solid $color1;
+        border-left:  .2rem solid $color1;
+        padding:0;
+        margin: 0;
+    }.header__computer a:after{
+        content: '';
+        position: absolute;
+        top:0;
+        right:0;
+        width: 1rem;
+        height: 1rem;
+        border-top: .2rem solid $color1;
+        border-right: .2rem solid $color1;
+        padding:0;
+        margin:0;
+    }
+    /*                                          FOOTER                                            */
+    .footer__mobileFirst--contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer__mobileFirst--contenedorIconos{
+        display: flex;
+        flex-direction: column;
+        align-items: $centrar;
+        justify-content: $centrar;
+        height: 100%;
+        width: 25%;
+    }
+    .footer__mobileFirst--contenedorIconos i{
+        margin: 0rem 1rem 1rem 0rem;
+        font-size: 2rem;
+    }
+    /*                                          INDEX                                              */
+    .contenedor__informacion{
+        display: flex;
+        padding: 1rem;
+        width: 100vw;
+        padding: 1rem 2rem 1rem 2rem;
+        gap:5rem;
+    }
+    .contenedor__imagen img{
+        border-radius: 10%;
+        box-shadow: 0 0 20px $color1;
+        padding-bottom: .5rem;
+        padding-left: .5rem;
+        height: fit-content;
+        width: fit-content;
+    }
+    .contenedor__texto{
+        width: 90%;
+        padding-left: 1rem;
+        margin-top: 1rem;
+    }
+    .contenedor__texto--ultimo{
+        display: flex;
+        justify-content: $centrar;
+        font-size: 1.5rem;
+        text-transform: none;
+    }
+    .contenedor__texto--ultimo span{
+        margin-left: .5rem;
+        margin-right: .5rem;
+        color:$color1;
+        padding: .2rem;
+        border-radius: .5rem;
+        box-shadow: 0 0 10px $color1;
+        margin-top: -.5rem;
+        height: fit-content;
+    }
+    /*                                          SERVICIOS                                            */
+    .contenedor__todasCajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: $centrar;
+        align-items: $centrar;
+        width: 100vw;
+    }
+    /*                                          PROFESIONALES                                       */
+    .contenedor{
+            grid-area: cuerpo;
+            display: grid;
+            align-items: $centrar;
+            justify-content: $centrar;
+            grid-template-columns: repeat( 2 , 1fr);
+            width: 100vw;
+    }
+    
+        .contenedor__profesionales--mobilFoto{
+            display: flex;
+            width: 70%;
+            justify-content:$centrar;
+            padding-bottom: 2rem;
+    }
+    .contenedor__profesionales--mobilFoto img{
+        border-radius: 10rem;
+        box-shadow: 0 0 20px $color1;
+        padding-bottom: .5rem;
+        padding-left: .5rem;
+    }
+        .contenedor__profesionales--mobilDescripcion{
+            display: flex;
+            flex-direction: column;
+            align-content: $centrar;
+            justify-content: $centrar;
+            width:50%;
+            font-size: 2rem;
+    }
+        .contenedor__profesionales--mobilDescripcion p{
+            justify-content: $centrar;
+            text-align: $centrar;
+    }
+    /*                                          GALERIA                                            */
+    .contenedor__imagenes{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-bottom: 1.5rem;
+        width: 100vw;
+        align-content: $centrar;
+    }
+    .contenedor__imagenes2{
+        display: flex;
+        flex-direction: column;
+        justify-content: $centrar;
+        width: 100vw;
+    }
+    .contenedor__imagenes img {
+        width: 100%;
+    }
+    .contenedor__imagenes2 img{
+        width: 50%;
+    }
+    .contenedor__imagenes--efecto{
+        display: flex;
+        justify-content: $centrar;
+        margin: 2rem;
+        transition: all 0.2s ease-in;
+    }
+    /*                                          FORMULARIO                                          */
+    .contenedor__formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: $centrar;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: fit-content;
+        width: 100vw;
+    }
+    .contenedor__formulario--form{
+        background-color: $blanco;
+        width: 100%;
+    }
+    .contenedor__formulario--cuadro{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+        color: $blanco;
+        border: $borde;
+    }
+    .contenedor__formulario--explicacion{
+        text-align: $centrar;
+        font-size: 1rem;
+    }
+    .contenedor__formulario--conformidad{
+        display: flex;
+        flex-direction: column;
+        border-top: solid $negro .5rem;
+        border-bottom: solid $negro .5rem ;
+        width: 100%;
+        height: fit-content;
+        margin-top: 1rem;
+    }
+    .reglas__contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: $centrar;
+        align-items: $centrar;
+        line-height: 2rem;
+        padding-left: 1rem;
+        height: fit-content;
+    }
+    }

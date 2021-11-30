@@ -1,0 +1,88 @@
+/*                                          CODIGO                                             */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#titulo{
+    text-align: $centrar;
+    color: $color1;
+    padding: .5rem;
+    font-size: 1rem;
+}
+/*                                          HEADER                                          */
+.header__computer{
+    display: none;
+}
+.header__mobile{
+    grid-area: header;
+    display: flex;
+    justify-content: $centrar;
+    height: 100%;
+    width: 100%;
+}
+.dropdown-item{
+    color: $color1;
+}
+/*                                           BODY                                          */
+body{
+    font-family: $fuente;
+    background-color: $fondobody;
+    display: grid;
+    grid-template-areas:$layout;
+    grid-template-rows: auto 1fr auto;
+    color: $color1;
+}
+/*                                          FOOTER                                          */
+.footer__mobileFirst--contenedor{
+    grid-area: footer;
+    background-color: $fondofooter;
+    color: $color1;
+    width:100%;
+    height:100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: $centrar;
+    padding: 1rem;
+    flex-direction: column;
+}
+.footer__mobileFirst--contenedorIconos{
+    display: flex;
+    flex-direction: column;
+    align-items: $centrar;
+    justify-content: $centrar;
+    height: 100%;
+}
+.footer__mobileFirst--contenedorIconos ul{
+    list-style: none;
+}
+.footer__mobileFirst--contenedorIconos i{
+    margin-right: .5rem;
+    font-size: 2.5rem;
+}
+.footer__mobileFirst--contenedorInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: $centrar;
+    align-items: $centrar;
+    width: 100%;
+}
+.footer__mobileFirst--contenedorInfo div{
+    width:fit-content;
+    text-align: $centrar;
+}
+.footer__mobileFirst--copy{
+    background-color: $negro;
+    color: $color1;
+    text-align: $centrar;
+}
+
+/*                                          CONTENIDO                                          */
+.contenedor{
+    grid-area: cuerpo;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: $centrar;
+    justify-content: $centrar;
+}

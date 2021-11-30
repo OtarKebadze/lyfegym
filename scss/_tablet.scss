@@ -1,0 +1,68 @@
+/*------------------------------------  MEDIAQUERY TABLET  ----------------------------------------*/
+@media (min-width: 576px) and (max-width: 991px){
+    /*                                            HEADER                                            */
+    .header__mobile{
+        display: none;
+    }
+    .header__computer{
+        grid-area: header;
+        height: 100%;
+        width: 100vw; 
+        display: grid;
+        grid-template-areas:    'logo imagen'
+                                'links links';
+        grid-template-columns: auto 80vw;
+    }
+    .header__computer--logo{
+        display: flex;
+        align-items: $centrar;
+        justify-content: $centrar;
+        margin-left: 1.5rem;
+    }
+    .header__computer--logo p{
+        grid-area: logo;
+        font-size: 2rem;  
+        text-align: $centrar;
+        color: $color1;
+        border-radius: 1rem;
+        padding: 1rem;
+        animation: Flicker .35s infinite;
+    }
+    .header__computer--image{
+        grid-area: imagen;
+        background: url(../img/banner.jpg);
+        background-size: cover;
+        border: $negro solid 1px;
+        height: 15rem;
+        border-radius: 10%;
+        margin: 1rem;
+        width: 80%;
+    }
+    .header__computer--links{
+        grid-area: links;
+        width: 100vw;
+    }
+    .header__computer--links nav{
+        grid-area: links;
+        display: flex;
+        flex-direction: row;
+        justify-content: $centrar;
+    }
+    .header__computer a{
+        font-size: 1rem;
+        text-decoration: none;
+        color:$color1;
+        margin: .5rem 1rem .5rem 0rem;
+        padding: .5rem;
+        animation: Flicker .25s infinite;
+    }
+    /*                                             INDEX                                            */
+    .contenedor__texto p{
+        text-align: $centrar;
+    }
+    .contenedor__texto span{
+        box-shadow: 0 0 10px $color1;
+    }
+    
+    }
+    

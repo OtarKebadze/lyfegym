@@ -1,0 +1,14 @@
+/*                                          ANIMACIONES  Y EFECTOS                                          */
+.header__computer--links div:hover{
+    transform: scale(1.5);
+}
+.header__computer a:hover{
+    background:$color1;
+    color:$blanco;
+    box-shadow: 0 0 50px $color1;
+}
+@keyframes Flicker {
+    80% {
+    box-shadow:.5vw .1vw .5vw $color1, -.5vw -.5vw .5vw $color1, .5vw -.5vw .5vw $color1, -.5vw .5vw .5vw $color1, 0 -.5vw .5vw $color1, 0 .5vw .5vw $color1, .5vw 0 .5vw $color1;
+    }
+}

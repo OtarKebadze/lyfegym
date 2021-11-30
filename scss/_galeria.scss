@@ -1,0 +1,13 @@
+/*                                           GALERIA                                          */
+.contenedor__imagenes{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.contenedor__imagenes2{
+    width: 100vw;
+}
+.contenedor__imagenes img , .contenedor__imagenes2 img{
+    width: 100vw;
+    padding: 1rem 0rem 1rem 0rem;
+}
